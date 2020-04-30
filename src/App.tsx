@@ -1,11 +1,13 @@
 import React from 'react'
 
-import CodeEditor from './components/codeEditor'
+import NavBar from './components/navigation/navBar'
+import Routes from './components/routes'
 
 function App() {
   return (
     <div className='App'>
-      <CodeEditor />
+      <NavBar />
+      <Routes />
     </div>
   )
 }

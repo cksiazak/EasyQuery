@@ -3,8 +3,9 @@ import AceEditor from 'react-ace'
 
 import 'ace-builds/src-noconflict/mode-json'
 import 'ace-builds/src-noconflict/theme-github'
+import 'ace-builds/webpack-resolver'
 
-const CodeEditor = (): JSX.Element => {
+const RESTcodeEditor = (): JSX.Element => {
   const [code, setCode] = useState<string>('{}')
 
   const onChange = (e: string)=> {
@@ -22,4 +23,4 @@ const CodeEditor = (): JSX.Element => {
   )
 }
 
-export default CodeEditor
+export default RESTcodeEditor
